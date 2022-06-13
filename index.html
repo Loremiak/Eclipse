@@ -4,8 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Random Gallery</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="https://cdn-icons-png.flaticon.com/512/2659/2659360.png"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
 		<main class="main-container">
@@ -13,23 +18,82 @@
 				<p class="box-title">Description</p>
 				<img
 					src="https://cdn.pixabay.com/photo/2022/06/05/13/44/girl-7244099_960_720.jpg"
-					alt=""
-					class="img"
+					alt="Example Unsplash Image"
+					class="unsplash-img"
 				/>
 
 				<div class="box-description-container">
-					<span class="by-on">by</span>
-					<a href="#" class="description">Author Name</a>
-					<span class="by-on">on</span>
-					<p class="description">01/05/2021</p>
+					<div>
+						<span class="by-on">by</span>
+						<a href="#" class="description">Author Name</a>
+					</div>
+					<div>
+						<span class="by-on">on</span>
+						<p class="description">01/05/2021</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="box"></div>
+			<div class="box">
+				<p class="box-title">Description</p>
+				<img
+					src="https://cdn.pixabay.com/photo/2022/06/05/13/44/girl-7244099_960_720.jpg"
+					alt="Example Unsplash Image"
+					class="unsplash-img"
+				/>
 
-			<div class="box"></div>
+				<div class="box-description-container">
+					<div>
+						<span class="by-on">by</span>
+						<a href="#" class="description">Author Name</a>
+					</div>
+					<div>
+						<span class="by-on">on</span>
+						<p class="description">01/05/2021</p>
+					</div>
+				</div>
+			</div>
 
-			<div class="box"></div>
+			<div class="box">
+				<p class="box-title img-title"></p>
+				<img
+					src=""
+					alt="Random Unsplash Image"
+					class="unsplash-img img-class"
+				/>
+
+				<div class="box-description-container">
+					<div>
+						<span class="by-on">by</span>
+						<a href="" class="description author-name"></a>
+					</div>
+					<div>
+						<span class="by-on">on</span>
+						<p class="description created-date"></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="box">
+				<p class="box-title img-title" id="img-title"></p>
+				<img
+					src=""
+					alt="Random Unsplash Image"
+					class="unsplash-img img-class"
+					id="img-id"
+				/>
+
+				<div class="box-description-container">
+					<div>
+						<span class="by-on">by</span>
+						<a href="" class="description author-name" id="author-name"></a>
+					</div>
+					<div>
+						<span class="by-on">on</span>
+						<p class="description created-date" id="created-date"></p>
+					</div>
+				</div>
+			</div>
 		</main>
 		<script src="script.js"></script>
 	</body>

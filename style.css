@@ -37,7 +37,7 @@ body {
 	border: grey solid 1px;
 	width: 85%;
 	max-width: 400px;
-	height: 400px;
+	height: auto;
 	border-radius: 15px;
 	overflow: hidden;
 	-webkit-box-shadow: 0px 6px 2px 0px rgba(138, 138, 138, 1);
@@ -50,10 +50,10 @@ body {
 	padding: 0.5rem 0 1.5rem 0.5rem;
 }
 
-/* .img {
+.unsplash-img {
 	width: 100%;
-	height: 75%;
-} */
+	height: 100%;
+}
 
 .box-description-container {
 	position: absolute;
@@ -67,34 +67,43 @@ body {
 	padding: 0.5rem 0;
 }
 
+.box-description-container div {
+	width: 150px;
+	display: flex;
+	justify-content: space-around;
+}
+
 .by-on {
 	font-weight: bold;
 	font-size: 0.75rem;
 }
 
 .description {
-	font-size: 1rem;
-	margin-top: 0.75rem;
+	font-size: 0.75rem;
+	margin-top: 0.5rem;
 }
 
 @media screen and (min-width: 667px) {
 	.main-container {
 		flex-flow: row wrap;
 		gap: 2.5rem;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.box {
+		-webkit-box-shadow: 2px 6px 3px 0px rgba(134, 134, 134, 1);
+		-moz-box-shadow: 2px 6px 3px 0px rgba(134, 134, 134, 1);
+		box-shadow: 2px 6px 3px 0px rgba(134, 134, 134, 1);
 	}
 
 	.box-title {
 		position: absolute;
 		padding: 0;
-		font-size: 2.25rem;
+		font-size: 1.75rem;
 		bottom: 60px;
 		left: 20px;
 		z-index: 1;
-	}
-
-	.img {
-		width: 100%;
-		height: 100%;
 	}
 
 	.box-description-container {
@@ -102,9 +111,9 @@ body {
 		background: rgb(255, 255, 255);
 		background: linear-gradient(
 			180deg,
-			rgba(255, 255, 255, 0) 0%,
+			rgba(255, 255, 255, 0.1) 0%,
 			rgba(255, 255, 255, 0.7) 35%,
-			rgba(255, 255, 255, 1) 100%
+			rgba(255, 255, 255, 0.8) 100%
 		);
 		align-items: flex-end;
 		justify-content: space-evenly;
@@ -113,11 +122,11 @@ body {
 
 	.by-on {
 		font-size: 1rem;
-		padding-bottom: 0.75rem;
+		padding-bottom: 0.5rem;
 	}
 
 	.description {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		margin-top: 0.75rem;
 	}
 }
