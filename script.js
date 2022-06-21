@@ -24,7 +24,6 @@ function getAPI() {
 				boxDOM.appendChild(boxTitleDOM);
 
 				let imgSource = photos.urls.full;
-				console.log(imgSource);
 				const imgDOM = document.createElement("img");
 				imgDOM.setAttribute("class", "unsplash-img");
 				imgDOM.setAttribute("alt", "Example Unsplash Image");
@@ -48,12 +47,10 @@ function getAPI() {
 				boxDescLink.setAttribute("class", "description");
 				boxDescLink.innerText = userName;
 				authorInfo.appendChild(boxDescLink);
-				console.log(userName);
 
 				let portfolioUrl = photos.user.portfolio_url;
 				if (portfolioUrl !== null) {
 					boxDescLink.setAttribute("href", portfolioUrl);
-					console.log(portfolioUrl);
 				}
 
 				const dateInfo = document.createElement("div");
@@ -69,7 +66,6 @@ function getAPI() {
 				let date = new Date(photos.created_at).toLocaleDateString("en-NZ");
 				boxDescDate.innerText = date;
 				dateInfo.appendChild(boxDescDate);
-				console.log(date);
 			});
 		});
 }
