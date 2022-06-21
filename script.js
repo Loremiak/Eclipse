@@ -1,8 +1,7 @@
 function getAPI() {
 	fetch(
-		"https://api.unsplash.com/photos/random?count=4&client_id="
+		`https://api.unsplash.com/photos/random?count=2&client_id=${process.env.UNSPLASH_API_KEY}`
 	)
-		// `https://api.unsplash.com/photos/random?count=2&client_id=${env.UNSPLASH_API_KEY}`
 		.then((response) => {
 			return response.json();
 		})
