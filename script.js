@@ -1,7 +1,9 @@
 import TOKEN from "./config.js";
 
 function getAPI() {
-	fetch(`https://api.unsplash.com/photos/random?count=4&client_id=${TOKEN}`)
+	fetch(
+		`https://api.unsplash.com/photos/random?q=20&dpr=1&auto=compress&w=0.1&h=0.1&count=4&client_id=${TOKEN}`
+	)
 		.then((response) => {
 			return response.json();
 		})
