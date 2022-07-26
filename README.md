@@ -8,4 +8,4 @@ Project is created with:
 * JavaScript
 	
 ## Setup
-Live demo: singular-custard-c785fc.netlify.app/
+Live demo: <a href='https://singular-custard-c785fc.netlify.app/'>singular-custard-c785fc.netlify.app/</a>
